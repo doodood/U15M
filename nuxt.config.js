@@ -1,6 +1,7 @@
 
 export default {
   components: true,
+  target: 'static',
   /*
   ** Headers of the page
   */
