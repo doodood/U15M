@@ -37,7 +37,7 @@
             ><span class="nav__text">Informations pratiques</span></router-link
           >
         </li>
-        
+
         <li class="header__nav__item">
           <router-link to="/news" class="header__nav__link"
             ><span class="nav__text">Contact</span></router-link
@@ -74,6 +74,9 @@ export default {
     align-self: center;
     justify-self: center;
     width: 15%;
+    @media only screen and (max-width: 51.25em){
+        width: 50%;
+    }
     margin-top: 3rem;
   }
 }
@@ -81,7 +84,7 @@ header {
   //background-color: transparent;
   background-color: black;
   //background-color: rgba(transparent, $alpha: .75);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .header__nav {
   display: flex;

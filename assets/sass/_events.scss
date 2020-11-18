@@ -4,12 +4,13 @@
   color: $color-primary;
   font-size: 1.4rem;
   display: grid;
-  grid-row-gap: 1rem;
-  padding: 1rem;
   @media only screen and (max-width: $bp-md){
     grid-column: full-start/full-end;
     display:block;
 }
+  grid-row-gap: 1rem;
+  padding: 1rem;
+
 }
 
 .event {

@@ -35,9 +35,9 @@ $color-heat-tertiary:#FF89B4;
 // RESPONSIVE BREAKPOINTS
 $bp-xxl: 100em; 
 $bp-xl: 75em; // 1200px(screen size) / 16 (default pixel)
-$bp-lg : 60em;
-$bp-md: 48.125em;// 10 / 16 = 0.625
-$bp-sm: 32em;
+$bp-lg : 62.5em;
+$bp-md: 56.25em;// 10 / 16 = 0.625
+$bp-sm: 51.25em;
 $bp-xs: 29em;
 *,
 *::before,
@@ -49,23 +49,21 @@ $bp-xs: 29em;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62,5% ==> 1rem = 10px
-    @media only screen and (min-width: $bp-xxl){
+    /* @media only screen and (min-width: $bp-xxl){
         font-size: 75%; //8px
-    }
-    @media only screen and (max-width: $bp-xl){
-        font-size: 55%; //8px
-    }
-    @media only screen and (max-width: $bp-lg){
-        font-size: 45%; //8px
-    }
-    @media only screen and (max-width: $bp-md){
+    } */
+
+    /* @media only screen and (max-width: $bp-md){
         font-size: 40%;
     }
     @media only screen and (max-width: $bp-sm){
-        font-size: 35%;
+        font-size: 38%;
     }
     @media only screen and (max-width: $bp-xs){
         font-size: 30%;
+    } */
+    @media only screen and (max-width: 51.25em){
+        font-size: 52.5%; ;
     }
 }
 a {
