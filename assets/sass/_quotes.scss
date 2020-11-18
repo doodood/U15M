@@ -1,0 +1,17 @@
+.quotes {
+    background-color: $color-white;
+    grid-column: full-start/col-end 5;
+    padding: 4rem;
+    display:grid;
+    align-content: center;
+    justify-items: start;
+
+    @media only screen and (max-width: $bp-md){
+        grid-column: full-start/full-end;
+    }
+    &__text {
+        font-size:1.5rem;
+        font-style:italic;
+    }
+    
+}

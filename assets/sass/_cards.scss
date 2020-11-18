@@ -1,0 +1,55 @@
+.cards {
+    grid-column: center-start/center-end;
+    //background-color: $color-lakers-primary-dark;
+    display: grid;
+    margin: 7rem 0;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    grid-gap: 7rem;
+
+}
+
+.card {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba($color-grey,.25);
+    grid-row-gap: 3.5rem;
+    &__img {
+        max-width: 100%;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        z-index:1;
+    }
+    &__title{
+        grid-row:1/2;
+        z-index:3;
+        grid-column: 1/-1;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.25rem;
+        background-color: $color-black;
+        border: 2px solid $color-primary-dark;
+        color: $color-white;
+        width: 80%;
+        justify-self: center;
+        align-self: end;
+        transform: translateY(50%)
+    }
+    &__location,
+    &__date,
+    &__event,
+    &__test{
+        font-size:1.6rem;
+        margin-left:2rem;
+        display:flex;
+        align-items:center;
+        svg {
+            fill: $color-primary;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+        }
+    }
+    &__btn {
+        grid-column: 1/-1;
+    }
+}

@@ -1,0 +1,92 @@
+// MIAMI VICE Theme color
+$color-primary: #CE1141;
+$color-primary-dark: #860038;
+$color-secondary:#E56020;
+$color-tertiary:#F9AD1B;
+
+$color-black:#000;
+$color-white: #fff;
+$color-grey: #cfcecc;
+$color-grey-dark-2:#63727A;
+$color-orange-dark :#B95915;
+
+
+//BGX THEME COLORS 
+$color-bgx-primary: #CE1141;
+$color-bgx-primary-dark: #860038;
+$color-bgx-secondary:#E56020;
+$color-bgx-tertiary:#F9AD1B;
+// Lakers THEME COLORS
+$color-lakers-primary-dark: #552583;
+$color-lakers-primary: #FDB927;
+
+// Raptors Theme colors
+$color-raptors-primary:#CE1147;
+
+// Spurs Theme colors
+$color-spurs-primary:#C4CED4;
+
+// MIAMI VICE Colors 
+$color-heat-primary: #0FEBE3;
+$color-heat-primary-dark: #05B6C5;
+$color-heat-secondary:#F43086;
+$color-heat-tertiary:#FF89B4;  
+
+// RESPONSIVE BREAKPOINTS
+$bp-xxl: 100em; 
+$bp-xl: 75em; // 1200px(screen size) / 16 (default pixel)
+$bp-lg : 60em;
+$bp-md: 48.125em;// 10 / 16 = 0.625
+$bp-sm: 32em;
+$bp-xs: 29em;
+*,
+*::before,
+*::after {
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62,5% ==> 1rem = 10px
+    @media only screen and (min-width: $bp-xxl){
+        font-size: 75%; //8px
+    }
+    @media only screen and (max-width: $bp-xl){
+        font-size: 55%; //8px
+    }
+    @media only screen and (max-width: $bp-lg){
+        font-size: 45%; //8px
+    }
+    @media only screen and (max-width: $bp-md){
+        font-size: 40%;
+    }
+    @media only screen and (max-width: $bp-sm){
+        font-size: 35%;
+    }
+    @media only screen and (max-width: $bp-xs){
+        font-size: 30%;
+    }
+}
+a {
+    text-decoration:none;
+}
+body {
+    color: $color-black;
+    line-height: 1.6;
+}
+.container {
+    display:grid;
+    //grid-template-rows: 75vh min-content min-content min-content repeat(3,min-content); Add the slider if you remove hte comment
+    grid-template-rows: minmax(min-content,1fr) min-content min-content repeat(3,min-content); 
+    //grid-template-columns: [full-start] minmax(6rem,max-content) [center-start] repeat(8, [col-start] minmax(min-content,max-content) [col-end]) [center-end] minmax(6rem,max-content) [full-end];
+    //grid-template-columns: [full-start] minmax(min-content,max-content) [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] minmax(min-content,max-content)  [full-end];
+    grid-template-columns: [full-start] minmax(12rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] minmax(12rem,1fr) [full-end];
+    @media only screen and (max-width: $bp-xl){
+        grid-template-rows: minmax(min-content,1fr) min-content min-content repeat(3,min-content);
+        grid-template-columns: [full-start] minmax(6rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
+    }
+}
+.storyblok__outline{
+    padding:0 !important;
+}

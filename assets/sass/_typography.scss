@@ -1,0 +1,172 @@
+%heading {
+  //font-family:;
+  font-weight: 400;
+}
+// HEAT CITY EDITION COLORS
+.heat {
+  &--primary {
+    color: $color-primary-dark;
+  }
+  &--secondary {
+    color: $color-secondary;
+  }
+  &--tertiary {
+    color: $color-tertiary;
+  }
+}
+
+// Club colors {
+
+.bgx {
+  &--primary {
+    color: $color-bgx-primary;
+    &-dark {
+      color: $color-bgx-primary-dark;
+    }
+
+  }
+  &--secondary {
+    color: $color-bgx-secondary;
+  }
+  &--tertiary {
+    color: $color-bgx-tertiary;
+  }
+}
+//lakers colors
+.lakers {
+  &--primary {
+    color: $color-lakers-primary;
+  }
+  &--secondary {
+    color: $color-lakers-primary-dark;
+  }
+}
+//SPURS COLORS
+.spurs {
+  &--primary {
+    color: $color-spurs-primary;
+  }
+}
+//RAPTORS COLOR
+.raptors {
+  &--primary{
+    color: $color-raptors-primary;
+  }
+}
+.heading-1 {
+  @extend %heading;
+}
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;  
+}
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: $color-black;
+}
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+  &--light {
+    color: $color-lakers-primary-dark;
+  }
+  &--dark {
+    color: $color-lakers-primary;
+  }
+}
+.heading-5 {
+  @extend %heading;
+}
+.heading-6 {
+  @extend %heading;
+}
+.btn {
+  background-color: $color-black;
+  border: none;
+  border-radius: 0;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-align: center;
+  display: block;
+  &--reverse {
+    background-color: $color-primary ;
+    color: $color-black;
+   /*  &:hover {
+      background-color: $color-primary;
+      color: $color-secondary;
+    } */
+  }
+  &:hover {
+    background-position: right center;
+    background-color: $color-black;
+    color: $color-tertiary;    
+    text-decoration: none;
+  }
+ 
+/*   &:hover > .miami-text {
+    transition: all 0.3s;
+    background: linear-gradient(
+      to right,
+      #05b6c5 0%,
+      #0febe3 33%,
+      #ff89b4 66%,
+      #f43086 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.miami-text {
+  background: linear-gradient(
+    to right,
+    #05b6c5 0%,
+    #0febe3 33%,
+    #ff89b4 66%,
+    #f43086 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s;
+
+  &--reverse {
+    background: linear-gradient(
+      to right,
+      #f43086 0%,
+      #05b6c5 33%,
+      #0febe3 66%,
+      #ff89b4 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s;
+    &:hover {
+      background: linear-gradient(
+        to right,
+        #000 0%,
+        #ff89b4 33%,
+        #f43086 66%,
+        #ff89b4 100%
+      );
+    }
+  } */
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-xl {
+  margin-bottom: 8rem;
+}
