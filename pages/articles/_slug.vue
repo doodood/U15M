@@ -91,7 +91,17 @@
     })
   }
 } */
+import { createSEOMeta } from '../../utils/seo'
 export default {
+  head() {
+    const  title = this.article.content.name
+    const description = this.article.content.body
+
+    return {
+      title,
+      meta: createSEOMeta({ description }),
+    }
+  },
   async asyncData({ app, route, error }) {
     // Get the slug from the route
     

@@ -13,7 +13,11 @@
   </section> -->
   <section class="mw7 center">
     <h2 class="athelas ph3 ph0-l">News</h2>
-    <article class="pv4 bt bb b--black-10 ph3 ph0-l" v-for="article in articles" :key="article.content.title">
+    <nuxt-link
+    class="block text-gray-800 rounded-lg shadow-lg p-6"
+    :to="`/articles/${article.slug}`" v-for="article in articles" :key="article.content.title"
+  >
+    <article class="pv4 bt bb b--black-10 ph3 ph0-l" >
       <div class="flex flex-column flex-row-ns">
         <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
           <h1 class="f3 athelas mt0 lh-title">
@@ -36,6 +40,7 @@
       </p>
       <time class="f6 db gray">{{article.content.date.toLocaleDateString()}}</time>
     </article>
+    </nuxt-link>
   </section>
 </template>
 
