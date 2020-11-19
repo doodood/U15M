@@ -44,6 +44,10 @@ export default {
   */
   buildModules: [
   ],
+  sitemap: {
+    hostname: process.env.HOST_NAME,
+    routes: [] // all the dynamic routes
+  },
   /*
   ** Nuxt.js modules
   */
