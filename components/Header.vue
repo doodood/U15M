@@ -17,7 +17,7 @@
         </li>
         
         <li class="header__nav__item">
-          <router-link to="#" class="header__nav__link"
+          <router-link to="/articles" class="header__nav__link"
             ><span class="nav__text">les actualités</span></router-link
           >
         </li>
